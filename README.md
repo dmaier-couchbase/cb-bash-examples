@@ -26,6 +26,7 @@ SUCCESS: init/edit 192.168.7.141
 ```
 export MASTER_NAME=192.168.7.141
 export NODE_NAME=192.168.7.142
+
 ./add_node.bash 
 Setting variable ADMIN_NAME to couchbase
 Setting variable ADMIN_PWD to couchbase
