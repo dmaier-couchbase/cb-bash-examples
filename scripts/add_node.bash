@@ -40,7 +40,7 @@ function main {
                         --node-init-index-path=$IDX_DIR\
                         --node-init-hostname=$NODE_NAME
 
-		echo "Initializing the cluster ..."
+		echo "Adding the node to the cluster ..."
 		$CB_BIN rebalance -c ${MASTER_NAME}:8091 -u $ADMIN_NAME -p $ADMIN_PWD\
 			--server-add=${NODE_NAME}:8091\
 			--server-add-username=$ADMIN_NAME --server-add-password=$ADMIN_PWD
