@@ -15,7 +15,7 @@ function process_args {
 }
 
 function usage {
-	echo "Use: $0 {ADMIN_NAME} {ADMIN_PWD} {MASTER_NAME} {RAM_SIZE}"
+	echo "Use: $0 with environment variables ADMIN_NAME, ADMIN_PWD, MASTER_NAME, RAM_SIZE"
 }
 
 
