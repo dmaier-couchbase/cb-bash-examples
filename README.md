@@ -41,3 +41,27 @@ SUCCESS: server-add 192.168.7.142:8091
 INFO: rebalancing . 
 SUCCESS: rebalanced cluster
 ```
+
+## Creating a bucket
+
+```
+export MASTER_NAME=localhost
+export BUCKET_NAME=bash_examples
+export BUCKET_PWD=hello
+
+
+./create_bucket.bash 
+Setting variable ADMIN_NAME to couchbase
+Setting variable ADMIN_PWD to couchbase
+Variable MASTER_NAME is already set
+Variable NODE_NAME is already set
+Setting variable RAM_SIZE to 1024
+Setting variable DATA_DIR to /opt/couchbase/var/lib/data
+Setting variable IDX_DIR to /opt/couchbase/var/lib/idx
+Setting variable BUCKET_SIZE to 128
+Variable BUCKET_NAME is already set
+Variable BUCKET_PWD is already set
+Setting variable BUCKET_REPL to 1
+Creating the bucket ...
+...SUCCESS: bucket-create
+```

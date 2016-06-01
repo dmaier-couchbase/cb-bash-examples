@@ -21,6 +21,11 @@ function main {
   export_arg RAM_SIZE 1024
   export_arg DATA_DIR /opt/couchbase/var/lib/data
   export_arg IDX_DIR /opt/couchbase/var/lib/idx
+  export_arg BUCKET_SIZE 128
+  export_arg BUCKET_NAME demo
+  export_arg BUCKET_PWD test
+  export_arg BUCKET_REPL 1
+
 }
 
 main
