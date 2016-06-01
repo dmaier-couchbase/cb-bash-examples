@@ -1,3 +1,5 @@
+## Check if a envrionment variable is set and 
+## if not then set it to the default value
 function export_arg {
 
   if env | grep -q "^$1="
