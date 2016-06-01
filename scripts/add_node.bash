@@ -34,10 +34,6 @@ function main {
 		usage
   	else
 
-		echo "Creating index and data directory ..."
-		mkdir -p $DATA_DIR
-		mkdir -p $IDX_DIR		
-
 		echo "Initializing the node ..."
                 $CB_BIN node-init -c $NODE_NAME:8091 -u $ADMIN_NAME -p $ADMIN_PWD\
                         --node-init-data-path=$DATA_DIR\
