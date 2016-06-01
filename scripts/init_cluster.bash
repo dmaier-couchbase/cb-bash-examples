@@ -1,9 +1,16 @@
 #!/bin/bash
+
+## Location of the Couchbase CLI
 export CB_BIN=/opt/couchbase/bin/couchbase-cli
 
-function process_args {
+## Get the working directory
+export SOURCE="${BASH_SOURCE[0]}"
+export WD="$( dirname "$SOURCE" )"
 
-	source $PWD/default_args.bash 
+## Import the default arguments for this script
+source $WD/default_args.bash
+
+function print_args {
 
 	echo "Using the following arguments: "
 	echo " ADMIN_NAME=$ADMIN_NAME"
@@ -16,6 +23,7 @@ function process_args {
 
 function usage {
 	echo "Use: $0 with environment variables ADMIN_NAME, ADMIN_PWD, MASTER_NAME, RAM_SIZE"
+	print_args
 }
 
 
@@ -45,5 +53,4 @@ function main {
 	fi
 }
 
-process_args
 main
